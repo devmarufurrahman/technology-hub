@@ -44,8 +44,54 @@ export const useGsapDownStagger = (arr, delay) => {
 				opacity: 1,
 				duration: 1,
 				stagger: 0.1,
-				ease: Expo.easeInOut,
+				ease: Expo.easeIn,
 				delay: delay,
+			},
+		);
+	}, []);
+};
+
+// gsap photo droping hook
+export const useGsapPhotoDroping = (arrphoto) => {
+	useEffect(() => {
+		const el = arrphoto.map((photo) => photo.current);
+
+		gsap.fromTo(
+			el,
+			{
+				y: "-100vh",
+				scale: 0,
+			},
+			{
+				y: 0,
+				scale: 1,
+				duration: 2.3,
+				stagger: 0.3,
+				delay: 0.6,
+				ease: Expo.easeInOut,
+			},
+		);
+	}, []);
+};
+
+// photo up down animation
+export const useGsapPhotoAnime = (arr, trigger) => {
+	useEffect(() => {
+		const el = arr.map((photo) => photo.current);
+
+		gsap.fromTo(
+			el,
+			{
+				y: 0,
+			},
+			{
+				y: "-40%",
+				ease: Expo.easeInOut,
+				scrollTrigger: {
+					trigger: trigger.current,
+					scrub: 1,
+					toggleActions: "play reverse play reverse",
+				},
 			},
 		);
 	}, []);
