@@ -74,7 +74,7 @@ export const useGsapPhotoDroping = (arrphoto) => {
 	}, []);
 };
 
-// photo up down animation
+// dropping photo up down animation
 export const useGsapPhotoAnime = (arr, trigger) => {
 	useEffect(() => {
 		const el = arr.map((photo) => photo.current);
@@ -85,11 +85,60 @@ export const useGsapPhotoAnime = (arr, trigger) => {
 				y: 0,
 			},
 			{
-				y: "-40%",
+				y: "-35%",
 				ease: Expo.easeInOut,
 				scrollTrigger: {
 					trigger: trigger.current,
 					scrub: 1,
+					toggleActions: "play reverse play reverse",
+				},
+			},
+		);
+	}, []);
+};
+
+// feature left side shutter hook
+export const useFeatureLeftShutter = (item, trig) => {
+	useEffect(() => {
+		const el = item.current;
+		gsap.fromTo(
+			el,
+			{
+				height: "100%",
+			},
+			{
+				height: 0,
+				duration: 1.4,
+				ease: Expo.easeInOut,
+				delay: 0.1,
+				scrollTrigger: {
+					trigger: trig.current,
+					start: "top center",
+					end: "bottom center",
+					toggleActions: "play reverse play reverse",
+				},
+			},
+		);
+	}, []);
+};
+
+// feature right side shutter hook
+export const useFeatureRightShutter = (item, trig) => {
+	useEffect(() => {
+		const el = item.current;
+		gsap.fromTo(
+			el,
+			{
+				width: "100%",
+			},
+			{
+				width: 0,
+				duration: 1.4,
+				ease: Expo.easeInOut,
+				scrollTrigger: {
+					trigger: trig.current,
+					start: "top center",
+					end: "bottom center",
 					toggleActions: "play reverse play reverse",
 				},
 			},
