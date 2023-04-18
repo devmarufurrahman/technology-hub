@@ -34,7 +34,7 @@ const Navbar = () => {
 			</ul>
 			<div className="logo" ref={logoRef}>
 				<Link to="/">
-					<h2>Immemorial</h2>
+					<h2>Technology</h2>
 				</Link>{" "}
 			</div>
 			<div className="favourite-link" ref={favRef}>
