@@ -30,11 +30,11 @@ const Favourite = ({ needFullHeight }) => {
 						className="blog-photo blog-one"
 						style={{
 							backgroundImage:
-								'url("https://images.pexels.com/photos/210156/pexels-photo-210156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
+								'url("https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=600")',
 						}}></div>
 					<span className="blog-text">
-						<h4>90's Car</h4>
-						<p>Classic Blue Coupe Parked Besides Red Pickup Truck</p>
+						<h4>Laptops</h4>
+						<p>Classic setup of developer</p>
 					</span>
 				</div>
 				<div className="blog-content" ref={blogImgRef2}>
@@ -45,7 +45,7 @@ const Favourite = ({ needFullHeight }) => {
 								'url("https://images.pexels.com/photos/8885024/pexels-photo-8885024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")',
 						}}></div>
 					<span className="blog-text">
-						<h4>90's party</h4>
+						<h4>Programmer party</h4>
 						<p>A Group of Friends Having a Party</p>
 					</span>
 				</div>

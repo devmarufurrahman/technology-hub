@@ -48,35 +48,35 @@ const Hero = () => {
 					className="photo one "
 					style={{
 						backgroundImage:
-							"url('https://images.pexels.com/photos/10046283/pexels-photo-10046283.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+							"url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=600')",
 					}}></div>
 				<div
 					ref={Photo2Ref}
 					className="photo two"
 					style={{
 						backgroundImage:
-							"url('https://images.pexels.com/photos/6577903/pexels-photo-6577903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+							"url('https://images.pexels.com/photos/2777898/pexels-photo-2777898.jpeg?auto=compress&cs=tinysrgb&w=600')",
 					}}></div>
 				<div
 					ref={Photo3Ref}
 					className="photo three"
 					style={{
 						backgroundImage:
-							"url('https://images.pexels.com/photos/4019766/pexels-photo-4019766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+							"url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=600')",
 					}}></div>
 				<div
 					ref={Photo4Ref}
 					className="photo four"
 					style={{
 						backgroundImage:
-							"url('https://images.pexels.com/photos/7584538/pexels-photo-7584538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+							"url('https://images.pexels.com/photos/2347380/pexels-photo-2347380.jpeg?auto=compress&cs=tinysrgb&w=600')",
 					}}></div>
 				<div
 					ref={Photo5Ref}
 					className="photo five"
 					style={{
 						backgroundImage:
-							"url('https://images.pexels.com/photos/4836368/pexels-photo-4836368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+							"url('https://images.pexels.com/photos/941572/pexels-photo-941572.jpeg?auto=compress&cs=tinysrgb&w=600')",
 					}}></div>
 			</div>
 		</section>
